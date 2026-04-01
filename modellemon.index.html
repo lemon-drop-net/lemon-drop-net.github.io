@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEMON DROP | Photo Production</title>
+    <style>
+        /* 共通設定 */
+        :root {
+            --primary-color: #FFF000; /* レモン色 */
+            --bg-color: #FFFFFF;
+            --text-color: #1a1a1a;
+            --sub-text: #666666;
+            --font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: var(--font-family);
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* レイアウト */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 100px 0;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease-out;
+        }
+
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ヘッダー */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.9);
+            z-index: 1000;
+            padding: 20px 0;
+        }
+
+        .logo {
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        /* メインビジュアル */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(135deg, #fff 70%, #fffde7 100%);
+        }
+
+        .hero-copy {
+            font-size: clamp(1.5rem, 5vw, 2.5rem);
+            font-weight: 500;
+            letter-spacing: 0.2em;
+            line-height: 1.5;
+        }
+
+        .hero-copy span {
+            display: block;
+            margin-top: 10px;
+        }
+
+        .scroll-down {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 0.8rem;
+            letter-spacing: 0.2em;
+            color: var(--sub-text);
+        }
+
+        /* 共通の見出し */
+        .section-title {
+            font-size: 0.8rem;
+            letter-spacing: 0.3em;
+            color: var(--sub-text);
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+        }
+
+        .section-title::after {
+            content: "";
+            flex-grow: 1;
+            height: 1px;
+            background: var(--primary-color);
+            margin-left: 20px;
+        }
+
+        /* About */
+        .about-content {
+            font-size: 1.1rem;
+            max-width: 700px;
+        }
+
+        .about-content h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        /* Recruit */
+        .recruit-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .recruit-card {
+            padding: 30px;
+            border: 1px solid #eee;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .recruit-card h4 {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        .recruit-card ul {
+            list-style: none;
+            font-size: 0.9rem;
+            color: var(--sub-text);
+        }
+
+        /* Contact */
+        .contact {
+            text-align: center;
+            padding-bottom: 150px;
+        }
+
+        .line-button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            padding: 25px 60px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.2rem;
+            letter-spacing: 0.1em;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 240, 0, 0.3);
+            margin-top: 30px;
+        }
+
+        .line-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 240, 0, 0.5);
+        }
+
+        .contact-text {
+            margin-bottom: 20px;
+            color: var(--sub-text);
+        }
+
+        /* フッター */
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.7rem;
+            color: var(--sub-text);
+            letter-spacing: 0.1em;
+        }
+
+        /* レスポンシブ */
+        @media (max-width: 768px) {
+            .recruit-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero-copy {
+                padding: 0 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">LEMON DROP</div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero visible">
+            <div class="hero-copy">
+                君のこだわりが、<br>
+                <span>誰かの光になる。</span>
+            </div>
+            <div class="scroll-down">SCROLL</div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="container">
+            <h2 class="section-title">About</h2>
+            <div class="about-content">
+                <h3>クリエイティブギルド、<br>LEMON DROP。</h3>
+                <p>
+                    私たちは、単なる撮影チームではありません。写真制作、MV制作、そしてデジタル写真集の出版までを一貫してプロデュースするクリエイティブ集団です。
+                </p>
+                <p style="margin-top: 20px;">
+                    「透明感」と「エモーショナルな質感」を大切に、あなたの個性が最も輝く瞬間を形にします。誠実な対話を通じて、共に最高の作品を作り上げることを約束します。
+                </p>
+            </div>
+        </section>
+
+        <!-- Recruit Section -->
+        <section id="recruit" class="container">
+            <h2 class="section-title">Recruit</h2>
+            <p>LEMON DROPでは、共に新しい価値を創造するパートナーを募集しています。</p>
+            <div class="recruit-grid">
+                <div class="recruit-card">
+                    <h4>Model</h4>
+                    <ul>
+                        <li>・フリーモデル / 地下アイドル</li>
+                        <li>・未経験の方も歓迎</li>
+                        <li>・世界観に共感いただける方</li>
+                    </ul>
+                </div>
+                <div class="recruit-card">
+                    <h4>Creator</h4>
+                    <ul>
+                        <li>・映像編集クリエイター</li>
+                        <li>・レタッチャー</li>
+                        <li>・独自の感性をお持ちの方</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="container contact">
+            <h2 class="section-title">Contact</h2>
+            <p class="contact-text">ご質問・ご応募は公式LINEより受け付けております。<br>まずはお気軽にご相談ください。</p>
+            <a href="#" class="line-button">公式LINEで応募する</a>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2024 LEMON DROP. All Rights Reserved.
+    </footer>
+
+    <script>
+        // スクロールに合わせてセクションを表示させるアニメーション
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>

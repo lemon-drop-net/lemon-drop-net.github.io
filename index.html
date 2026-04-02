@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LEMON DROP | エンタメカルチャーメディア</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
@@ -16,14 +16,16 @@
         <div class="header-upper">
             <div class="header-sns">
                 <a href="https://x.com/" target="_blank"><i class="fab fa-x-twitter"></i></a>
-                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
+            
             <div class="logo-container">
                 <h1 class="logo">LEMON DROP</h1>
                 <p class="tagline">Sweet but Poison - カルチャーの「今」を切り取る</p>
             </div>
-            <div class="header-search">
-                <i class="fas fa-search"></i>
+
+            <div class="header-search-bar">
+                <input type="text" placeholder="Search...">
+                <button><i class="fas fa-search"></i></button>
             </div>
         </div>
         
@@ -65,9 +67,12 @@
                             <time>2026.04.03</time>
                         </div>
                         <h4>独占取材：新ユニット「Lemonade Soul」が語る、結成の舞台裏と未来。</h4>
+                        
                         <div class="post-share">
-                            <a href="#"><i class="fab fa-x-twitter"></i></a>
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <span class="share-label">SHARE</span>
+                            <a href="#" class="share-tw"><i class="fab fa-x-twitter"></i></a>
+                            <a href="#" class="share-fb"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="share-line"><i class="fab fa-line"></i></a>
                         </div>
                     </div>
                 </article>
@@ -82,26 +87,12 @@
                             <time>2026.04.02</time>
                         </div>
                         <h4>【ライブレポ】熱狂のステージ。春の大型フェスでのパフォーマンスを徹底解説。</h4>
+                        
                         <div class="post-share">
-                            <a href="#"><i class="fab fa-x-twitter"></i></a>
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="post-card">
-                    <div class="post-thumb">
-                        <div class="thumb-placeholder">PHOTO</div>
-                    </div>
-                    <div class="post-body">
-                        <div class="post-meta">
-                            <span class="cat cat-feature">特集</span>
-                            <time>2026.04.01</time>
-                        </div>
-                        <h4>山口テクノが選ぶ、今こそ持ち歩きたいヴィンテージレンズ3選。</h4>
-                        <div class="post-share">
-                            <a href="#"><i class="fab fa-x-twitter"></i></a>
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <span class="share-label">SHARE</span>
+                            <a href="#" class="share-tw"><i class="fab fa-x-twitter"></i></a>
+                            <a href="#" class="share-fb"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="share-line"><i class="fab fa-line"></i></a>
                         </div>
                     </div>
                 </article>
@@ -116,11 +107,6 @@
     <footer>
         <div class="footer-inner">
             <div class="footer-logo">LEMON DROP</div>
-            <div class="footer-links">
-                <a href="#">運営会社</a>
-                <a href="#">プライバシーポリシー</a>
-                <a href="#">お問い合わせ</a>
-            </div>
             <p class="copyright">&copy; 2026 LEMON DROP / Yamaguchi Techno</p>
         </div>
     </footer>

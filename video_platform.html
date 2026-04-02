@@ -14,9 +14,9 @@
         .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); }
     </style>
 </head>
-<body class="bg-gray-50 pb-20">
+<body class="bg-gray-50 flex flex-col min-h-screen">
 
-    <header class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100 p-4">
+    <header class="bg-white/95 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100 p-4">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
             <h1 class="text-2xl font-black tracking-tighter italic">おとな<span class="text-lemon">レモン</span></h1>
             <nav class="hidden md:flex gap-6 text-[10px] font-black tracking-widest text-gray-500">
@@ -31,7 +31,7 @@
         </div>
     </header>
 
-    <main class="max-w-7xl mx-auto px-6 py-12 space-y-20">
+    <main class="flex-grow max-w-7xl mx-auto px-6 py-12 space-y-20">
 
         <section>
             <div class="flex items-center justify-between mb-8">
@@ -39,22 +39,19 @@
                     <span class="hot-badge text-white text-[10px] font-black px-3 py-1 rounded-full italic shadow-md">HOT CREATORS</span>
                     <h2 class="text-xl font-black italic">注目クリエイター</h2>
                 </div>
-                <select class="bg-transparent text-[10px] font-bold text-gray-400 outline-none">
-                    <option>ランダム表示</option>
-                    <option>人気順</option>
-                    <option>新着順</option>
-                </select>
             </div>
-            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 lg:gap-6">
-                <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 card-hover transition-all duration-300">
-                    <div class="aspect-[3/4] bg-gray-200"><img src="https://picsum.photos/seed/saki/400/533" class="w-full h-full object-cover"></div>
-                    <div class="p-3 text-center"><p class="text-[8px] font-black text-lemon tracking-widest mb-1 uppercase">地下アイドル</p><h4 class="font-black text-sm mb-2">サキ</h4><span class="text-[8px] text-gray-400 border border-gray-100 px-2 py-1 rounded-full">#王道系</span></div>
-                </div>
-                <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 card-hover transition-all duration-300">
-                    <div class="aspect-[3/4] bg-gray-200"><img src="https://picsum.photos/seed/rena/400/533" class="w-full h-full object-cover"></div>
-                    <div class="p-3 text-center"><p class="text-[8px] font-black text-lemon tracking-widest mb-1 uppercase">インフルエンサー</p><h4 class="font-black text-sm mb-2">RENA</h4><span class="text-[8px] text-gray-400 border border-gray-100 px-2 py-1 rounded-full">#地雷系</span></div>
-                </div>
-                </div>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-4 lg:gap-6">
+                <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 card-hover transition-all"><div class="aspect-[3/4]"><img src="https://picsum.photos/seed/saki/400/533" class="w-full h-full object-cover"></div><div class="p-3 text-center"><p class="text-[8px] font-black text-lemon tracking-widest mb-1">地下アイドル</p><h4 class="font-black text-sm mb-1">サキ</h4><span class="text-[8px] text-gray-400">#王道系</span></div></div>
+                <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 card-hover transition-all"><div class="aspect-[3/4]"><img src="https://picsum.photos/seed/rena/400/533" class="w-full h-full object-cover"></div><div class="p-3 text-center"><p class="text-[8px] font-black text-lemon tracking-widest mb-1">インフルエンサー</p><h4 class="font-black text-sm mb-1">RENA</h4><span class="text-[8px] text-gray-400">#地雷系</span></div></div>
+                <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 card-hover transition-all"><div class="aspect-[3/4]"><img src="https://picsum.photos/seed/mia/400/533" class="w-full h-full object-cover"></div><div class="p-3 text-center"><p class="text-[8px] font-black text-lemon tracking-widest mb-1">コスプレイヤー</p><h4 class="font-black text-sm mb-1">みあ</h4><span class="text-[8px] text-gray-400">#サブカル</span></div></div>
+                <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 card-hover transition-all"><div class="aspect-[3/4]"><img src="https://picsum.photos/seed/nanami/400/533" class="w-full h-full object-cover"></div><div class="p-3 text-center"><p class="text-[8px] font-black text-lemon tracking-widest mb-1">被写体モデル</p><h4 class="font-black text-sm mb-1">ななみ</h4><span class="text-[8px] text-gray-400">#透明感</span></div></div>
+                <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 card-hover transition-all"><div class="aspect-[3/4]"><img src="https://picsum.photos/seed/yuri/400/533" class="w-full h-full object-cover"></div><div class="p-3 text-center"><p class="text-[8px] font-black text-lemon tracking-widest mb-1">グラビア</p><h4 class="font-black text-sm mb-1">ユリ</h4><span class="text-[8px] text-gray-400">#お姉さん</span></div></div>
+                <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 card-hover transition-all"><div class="aspect-[3/4]"><img src="https://picsum.photos/seed/meru/400/533" class="w-full h-full object-cover"></div><div class="p-3 text-center"><p class="text-[8px] font-black text-lemon tracking-widest mb-1">コンカフェ嬢</p><h4 class="font-black text-sm mb-1">める</h4><span class="text-[8px] text-gray-400">#甘め</span></div></div>
+                <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 card-hover transition-all"><div class="aspect-[3/4]"><img src="https://picsum.photos/seed/kaori/400/533" class="w-full h-full object-cover"></div><div class="p-3 text-center"><p class="text-[8px] font-black text-lemon tracking-widest mb-1">役者</p><h4 class="font-black text-sm mb-1">KAORI</h4><span class="text-[8px] text-gray-400">#クール</span></div></div>
+                <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 card-hover transition-all"><div class="aspect-[3/4]"><img src="https://picsum.photos/seed/shion/400/533" class="w-full h-full object-cover"></div><div class="p-3 text-center"><p class="text-[8px] font-black text-lemon tracking-widest mb-1">TikToker</p><h4 class="font-black text-sm mb-1">しおん</h4><span class="text-[8px] text-gray-400">#ダンス</span></div></div>
+                <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 card-hover transition-all"><div class="aspect-[3/4]"><img src="https://picsum.photos/seed/hina/400/533" class="w-full h-full object-cover"></div><div class="p-3 text-center"><p class="text-[8px] font-black text-lemon tracking-widest mb-1">アイドル</p><h4 class="font-black text-sm mb-1">ひな</h4><span class="text-[8px] text-gray-400">#清楚系</span></div></div>
+                <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 card-hover transition-all"><div class="aspect-[3/4]"><img src="https://picsum.photos/seed/erika/400/533" class="w-full h-full object-cover"></div><div class="p-3 text-center"><p class="text-[8px] font-black text-lemon tracking-widest mb-1">DJ</p><h4 class="font-black text-sm mb-1">ERIKA</h4><span class="text-[8px] text-gray-400">#サイバー</span></div></div>
+            </div>
         </section>
 
         <section>
@@ -62,18 +59,18 @@
                 <span class="bg-zinc-800 text-white text-[10px] font-black px-3 py-1 rounded-full italic shadow-md">NEW CONTENTS</span>
                 <h2 class="text-xl font-black italic">最新投稿</h2>
             </div>
-            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 lg:gap-6">
-                <div class="relative aspect-video bg-gray-200 rounded-2xl overflow-hidden card-hover transition-all">
-                    <img src="https://images.unsplash.com/photo-1598520106830-8c45c2035460?auto=format&fit=crop&w=600" class="w-full h-full object-cover blur-[2px]">
-                    <div class="absolute inset-0 bg-black/40 flex items-center justify-center z-10">
-                        <span class="text-white text-3xl opacity-80">▶</span>
-                    </div>
-                    <div class="absolute bottom-3 left-3 right-3 text-white z-20">
-                        <p class="text-[10px] font-bold text-lemon">HANA / 限定プラン</p>
-                        <h4 class="text-xs font-black leading-tight">撮影の裏側、こっそり見せます。</h4>
-                    </div>
-                </div>
-                </div>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                <div class="relative aspect-video bg-gray-200 rounded-2xl overflow-hidden card-hover"><img src="https://picsum.photos/seed/c1/600/337" class="w-full h-full object-cover blur-[2px]"><div class="absolute inset-0 bg-black/30 flex items-center justify-center"><span class="text-white text-2xl">▶</span></div></div>
+                <div class="relative aspect-video bg-gray-200 rounded-2xl overflow-hidden card-hover"><img src="https://picsum.photos/seed/c2/600/337" class="w-full h-full object-cover blur-[2px]"><div class="absolute inset-0 bg-black/30 flex items-center justify-center"><span class="text-white text-2xl">▶</span></div></div>
+                <div class="relative aspect-video bg-gray-200 rounded-2xl overflow-hidden card-hover"><img src="https://picsum.photos/seed/c3/600/337" class="w-full h-full object-cover blur-[2px]"><div class="absolute inset-0 bg-black/30 flex items-center justify-center"><span class="text-white text-2xl">▶</span></div></div>
+                <div class="relative aspect-video bg-gray-200 rounded-2xl overflow-hidden card-hover"><img src="https://picsum.photos/seed/c4/600/337" class="w-full h-full object-cover blur-[2px]"><div class="absolute inset-0 bg-black/30 flex items-center justify-center"><span class="text-white text-2xl">▶</span></div></div>
+                <div class="relative aspect-video bg-gray-200 rounded-2xl overflow-hidden card-hover"><img src="https://picsum.photos/seed/c5/600/337" class="w-full h-full object-cover blur-[2px]"><div class="absolute inset-0 bg-black/30 flex items-center justify-center"><span class="text-white text-2xl">▶</span></div></div>
+                <div class="relative aspect-video bg-gray-200 rounded-2xl overflow-hidden card-hover"><img src="https://picsum.photos/seed/c6/600/337" class="w-full h-full object-cover blur-[2px]"><div class="absolute inset-0 bg-black/30 flex items-center justify-center"><span class="text-white text-2xl">▶</span></div></div>
+                <div class="relative aspect-video bg-gray-200 rounded-2xl overflow-hidden card-hover"><img src="https://picsum.photos/seed/c7/600/337" class="w-full h-full object-cover blur-[2px]"><div class="absolute inset-0 bg-black/30 flex items-center justify-center"><span class="text-white text-2xl">▶</span></div></div>
+                <div class="relative aspect-video bg-gray-200 rounded-2xl overflow-hidden card-hover"><img src="https://picsum.photos/seed/c8/600/337" class="w-full h-full object-cover blur-[2px]"><div class="absolute inset-0 bg-black/30 flex items-center justify-center"><span class="text-white text-2xl">▶</span></div></div>
+                <div class="relative aspect-video bg-gray-200 rounded-2xl overflow-hidden card-hover"><img src="https://picsum.photos/seed/c9/600/337" class="w-full h-full object-cover blur-[2px]"><div class="absolute inset-0 bg-black/30 flex items-center justify-center"><span class="text-white text-2xl">▶</span></div></div>
+                <div class="relative aspect-video bg-gray-200 rounded-2xl overflow-hidden card-hover"><img src="https://picsum.photos/seed/c10/600/337" class="w-full h-full object-cover blur-[2px]"><div class="absolute inset-0 bg-black/30 flex items-center justify-center"><span class="text-white text-2xl">▶</span></div></div>
+            </div>
         </section>
 
         <section>
@@ -81,16 +78,18 @@
                 <span class="hot-badge text-white text-[10px] font-black px-3 py-1 rounded-full italic shadow-md">RECOMMEND FILES</span>
                 <h2 class="text-xl font-black italic">おすすめコンテンツ</h2>
             </div>
-            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 lg:gap-6">
-                <div class="relative aspect-[3/4] bg-gray-200 rounded-2xl overflow-hidden card-hover transition-all">
-                    <img src="https://images.unsplash.com/photo-1581044777550-4cfa60707c03?auto=format&fit=crop&w=600" class="w-full h-full object-cover blur-md">
-                    <div class="absolute inset-0 bg-black/60 flex flex-col items-center justify-center z-10 text-center p-4">
-                        <span class="text-[8px] font-black text-lemon tracking-widest mb-1">SINGLE PURCHASE</span>
-                        <h4 class="text-xs font-black text-white leading-tight">MEI - 4K Extreme Edit Session</h4>
-                        <button class="mt-4 bg-lemon text-black text-[10px] font-black px-4 py-2 rounded-full shadow-lg">PPV: ¥1,200</button>
-                    </div>
-                </div>
-                </div>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-4">
+                <div class="relative aspect-[3/4] bg-gray-200 rounded-2xl overflow-hidden card-hover"><img src="https://picsum.photos/seed/p1/400/533" class="w-full h-full object-cover blur-md"><div class="absolute inset-0 bg-black/50 flex flex-col items-center justify-center"><span class="text-lemon text-[8px] font-black mb-1">PPV</span><button class="bg-white text-black text-[10px] font-black px-3 py-1 rounded-full">¥1,200</button></div></div>
+                <div class="relative aspect-[3/4] bg-gray-200 rounded-2xl overflow-hidden card-hover"><img src="https://picsum.photos/seed/p2/400/533" class="w-full h-full object-cover blur-md"><div class="absolute inset-0 bg-black/50 flex flex-col items-center justify-center"><span class="text-lemon text-[8px] font-black mb-1">PPV</span><button class="bg-white text-black text-[10px] font-black px-3 py-1 rounded-full">¥800</button></div></div>
+                <div class="relative aspect-[3/4] bg-gray-200 rounded-2xl overflow-hidden card-hover"><img src="https://picsum.photos/seed/p3/400/533" class="w-full h-full object-cover blur-md"><div class="absolute inset-0 bg-black/50 flex flex-col items-center justify-center"><span class="text-lemon text-[8px] font-black mb-1">PPV</span><button class="bg-white text-black text-[10px] font-black px-3 py-1 rounded-full">¥1,500</button></div></div>
+                <div class="relative aspect-[3/4] bg-gray-200 rounded-2xl overflow-hidden card-hover"><img src="https://picsum.photos/seed/p4/400/533" class="w-full h-full object-cover blur-md"><div class="absolute inset-0 bg-black/50 flex flex-col items-center justify-center"><span class="text-lemon text-[8px] font-black mb-1">PPV</span><button class="bg-white text-black text-[10px] font-black px-3 py-1 rounded-full">¥1,000</button></div></div>
+                <div class="relative aspect-[3/4] bg-gray-200 rounded-2xl overflow-hidden card-hover"><img src="https://picsum.photos/seed/p5/400/533" class="w-full h-full object-cover blur-md"><div class="absolute inset-0 bg-black/50 flex flex-col items-center justify-center"><span class="text-lemon text-[8px] font-black mb-1">PPV</span><button class="bg-white text-black text-[10px] font-black px-3 py-1 rounded-full">¥2,000</button></div></div>
+                <div class="relative aspect-[3/4] bg-gray-200 rounded-2xl overflow-hidden card-hover"><img src="https://picsum.photos/seed/p6/400/533" class="w-full h-full object-cover blur-md"><div class="absolute inset-0 bg-black/50 flex flex-col items-center justify-center"><span class="text-lemon text-[8px] font-black mb-1">PPV</span><button class="bg-white text-black text-[10px] font-black px-3 py-1 rounded-full">¥1,200</button></div></div>
+                <div class="relative aspect-[3/4] bg-gray-200 rounded-2xl overflow-hidden card-hover"><img src="https://picsum.photos/seed/p7/400/533" class="w-full h-full object-cover blur-md"><div class="absolute inset-0 bg-black/50 flex flex-col items-center justify-center"><span class="text-lemon text-[8px] font-black mb-1">PPV</span><button class="bg-white text-black text-[10px] font-black px-3 py-1 rounded-full">¥1,200</button></div></div>
+                <div class="relative aspect-[3/4] bg-gray-200 rounded-2xl overflow-hidden card-hover"><img src="https://picsum.photos/seed/p8/400/533" class="w-full h-full object-cover blur-md"><div class="absolute inset-0 bg-black/50 flex flex-col items-center justify-center"><span class="text-lemon text-[8px] font-black mb-1">PPV</span><button class="bg-white text-black text-[10px] font-black px-3 py-1 rounded-full">¥1,200</button></div></div>
+                <div class="relative aspect-[3/4] bg-gray-200 rounded-2xl overflow-hidden card-hover"><img src="https://picsum.photos/seed/p9/400/533" class="w-full h-full object-cover blur-md"><div class="absolute inset-0 bg-black/50 flex flex-col items-center justify-center"><span class="text-lemon text-[8px] font-black mb-1">PPV</span><button class="bg-white text-black text-[10px] font-black px-3 py-1 rounded-full">¥1,200</button></div></div>
+                <div class="relative aspect-[3/4] bg-gray-200 rounded-2xl overflow-hidden card-hover"><img src="https://picsum.photos/seed/p10/400/533" class="w-full h-full object-cover blur-md"><div class="absolute inset-0 bg-black/50 flex flex-col items-center justify-center"><span class="text-lemon text-[8px] font-black mb-1">PPV</span><button class="bg-white text-black text-[10px] font-black px-3 py-1 rounded-full">¥1,200</button></div></div>
+            </div>
         </section>
 
         <section>
@@ -98,12 +97,18 @@
                 <span class="hot-badge text-white text-[10px] font-black px-3 py-1 rounded-full italic shadow-md">SUGGESTED</span>
                 <h2 class="text-xl font-black italic">おすすめクリエイター</h2>
             </div>
-            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 lg:gap-6">
-                <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 card-hover transition-all duration-300">
-                    <div class="aspect-[3/4] bg-gray-200"><img src="https://picsum.photos/seed/hina/400/533" class="w-full h-full object-cover"></div>
-                    <div class="p-3 text-center"><p class="text-[8px] font-black text-lemon tracking-widest mb-1 uppercase">アイドル</p><h4 class="font-black text-sm mb-2">ひな</h4><span class="text-[8px] text-gray-400 border border-gray-100 px-2 py-1 rounded-full">#清楚系</span></div>
-                </div>
-                </div>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-4 lg:gap-6">
+                <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 card-hover transition-all"><div class="aspect-[3/4]"><img src="https://picsum.photos/seed/tsumugi/400/533" class="w-full h-full object-cover"></div><div class="p-3 text-center"><p class="text-[8px] font-black text-lemon tracking-widest mb-1 uppercase">被写体</p><h4 class="font-black text-sm mb-1">つむぎ</h4><span class="text-[8px] text-gray-400">#エモい</span></div></div>
+                <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 card-hover transition-all"><div class="aspect-[3/4]"><img src="https://picsum.photos/seed/noa/400/533" class="w-full h-full object-cover"></div><div class="p-3 text-center"><p class="text-[8px] font-black text-lemon tracking-widest mb-1 uppercase">ライバー</p><h4 class="font-black text-sm mb-1">のあ</h4><span class="text-[8px] text-gray-400">#癒やし</span></div></div>
+                <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 card-hover transition-all"><div class="aspect-[3/4]"><img src="https://picsum.photos/seed/mai/400/533" class="w-full h-full object-cover"></div><div class="p-3 text-center"><p class="text-[8px] font-black text-lemon tracking-widest mb-1 uppercase">ダンサー</p><h4 class="font-black text-sm mb-1">MAI</h4><span class="text-[8px] text-gray-400">#パワフル</span></div></div>
+                <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 card-hover transition-all"><div class="aspect-[3/4]"><img src="https://picsum.photos/seed/kokoro/400/533" class="w-full h-full object-cover"></div><div class="p-3 text-center"><p class="text-[8px] font-black text-lemon tracking-widest mb-1 uppercase">学生モデル</p><h4 class="font-black text-sm mb-1">こころ</h4><span class="text-[8px] text-gray-400">#フレッシュ</span></div></div>
+                <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 card-hover transition-all"><div class="aspect-[3/4]"><img src="https://picsum.photos/seed/kurumi/400/533" class="w-full h-full object-cover"></div><div class="p-3 text-center"><p class="text-[8px] font-black text-lemon tracking-widest mb-1 uppercase">インフルエンサー</p><h4 class="font-black text-sm mb-1">くるみ</h4><span class="text-[8px] text-gray-400">#毒っ気</span></div></div>
+                <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 card-hover transition-all"><div class="aspect-[3/4]"><img src="https://picsum.photos/seed/asuka/400/533" class="w-full h-full object-cover"></div><div class="p-3 text-center"><p class="text-[8px] font-black text-lemon tracking-widest mb-1 uppercase">レースクイーン</p><h4 class="font-black text-sm mb-1">ASUKA</h4><span class="text-[8px] text-gray-400">#高身長</span></div></div>
+                <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 card-hover transition-all"><div class="aspect-[3/4]"><img src="https://picsum.photos/seed/yua/400/533" class="w-full h-full object-cover"></div><div class="p-3 text-center"><p class="text-[8px] font-black text-lemon tracking-widest mb-1 uppercase">コンセプトモデル</p><h4 class="font-black text-sm mb-1">ゆあ</h4><span class="text-[8px] text-gray-400">#ゴシック</span></div></div>
+                <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 card-hover transition-all"><div class="aspect-[3/4]"><img src="https://picsum.photos/seed/rion/400/533" class="w-full h-full object-cover"></div><div class="p-3 text-center"><p class="text-[8px] font-black text-lemon tracking-widest mb-1 uppercase">声優卵</p><h4 class="font-black text-sm mb-1">りおん</h4><span class="text-[8px] text-gray-400">#萌え</span></div></div>
+                <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 card-hover transition-all"><div class="aspect-[3/4]"><img src="https://picsum.photos/seed/mizuki/400/533" class="w-full h-full object-cover"></div><div class="p-3 text-center"><p class="text-[8px] font-black text-lemon tracking-widest mb-1 uppercase">フリーモデル</p><h4 class="font-black text-sm mb-1">Mizuki</h4><span class="text-[8px] text-gray-400">#モード</span></div></div>
+                <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 card-hover transition-all"><div class="aspect-[3/4]"><img src="https://picsum.photos/seed/nico/400/533" class="w-full h-full object-cover"></div><div class="p-3 text-center"><p class="text-[8px] font-black text-lemon tracking-widest mb-1 uppercase">VTuber中の人</p><h4 class="font-black text-sm mb-1">ニコ</h4><span class="text-[8px] text-gray-400">#ミステリアス</span></div></div>
+            </div>
         </section>
 
     </main>
@@ -111,25 +116,14 @@
     <footer class="bg-white border-t border-gray-100 pt-16 pb-8 mt-20">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12 text-[10px] font-bold text-gray-400 uppercase tracking-widest">
-                <div class="space-y-3">
-                    <h5 class="text-gray-900 mb-4">Support</h5>
-                    <a href="#" class="block hover:text-lemon">よくあるご質問</a>
-                    <a href="#" class="block hover:text-lemon">お問い合わせ</a>
-                </div>
-                <div class="space-y-3">
-                    <h5 class="text-gray-900 mb-4">Legal</h5>
-                    <a href="#" class="block hover:text-lemon">利用規約</a>
-                    <a href="#" class="block hover:text-lemon">プライバシーポリシー</a>
-                </div>
-                <div class="space-y-3">
-                    <h5 class="text-gray-900 mb-4">Guidelines</h5>
-                    <a href="#" class="block hover:text-lemon">特定商取引法に基づく表記</a>
-                    <a href="#" class="block hover:text-lemon">企業ポリシーおよび苦情ポリシー</a>
-                </div>
+                <div class="space-y-3"><h5 class="text-gray-900 mb-4">Support</h5><a href="#" class="block hover:text-lemon transition">よくあるご質問</a><a href="#" class="block hover:text-lemon transition">お問い合わせ</a></div>
+                <div class="space-y-3"><h5 class="text-gray-900 mb-4">Legal</h5><a href="#" class="block hover:text-lemon transition">利用規約</a><a href="#" class="block hover:text-lemon transition">プライバシーポリシー</a></div>
+                <div class="space-y-3"><h5 class="text-gray-900 mb-4">Guidelines</h5><a href="#" class="block hover:text-lemon transition">特定商取引法に基づく表記</a><a href="#" class="block hover:text-lemon transition">企業ポリシーおよび苦情ポリシー</a></div>
+                <div class="space-y-3"><h5 class="text-gray-900 mb-4">Social</h5><a href="#" class="block hover:text-lemon transition">X (Twitter)</a><a href="#" class="block hover:text-lemon transition">Instagram</a></div>
             </div>
             <div class="border-t border-gray-50 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
                 <div class="text-xl font-black italic">おとな<span class="text-lemon">レモン</span></div>
-                <p class="text-[10px] text-gray-400 font-bold">©Copyright 2026 おとなレモン. All Rights Reserved.</p>
+                <p class="text-[10px] text-gray-400 font-bold tracking-widest">©Copyright 2026 おとなレモン. All Rights Reserved.</p>
             </div>
         </div>
     </footer>

@@ -1,84 +1,176 @@
-/* 色の定義 */
 :root {
-    --primary: #ff007a;
-    --secondary: #eaff00;
-    --dark: #111111;
-    --text: #ffffff;
+    --lemon: #eaff00; /* さわやかなレモン色 */
+    --accent: #333333; /* 引き締め用の濃いグレー */
+    --bg-white: #ffffff;
+    --light-gray: #f8f8f8;
 }
 
 body {
     margin: 0;
-    background-color: var(--dark);
-    color: var(--text);
-    font-family: sans-serif;
+    padding: 0;
+    background-color: var(--bg-white);
+    color: var(--accent);
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
+/* Header */
 header {
-    padding: 20px;
-    background: rgba(17, 17, 17, 0.9);
+    background: var(--bg-white);
+    border-bottom: 4px solid var(--lemon);
+    text-align: center;
+    padding-top: 20px;
     position: sticky;
     top: 0;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1000px;
-    margin: 0 auto;
+    z-index: 100;
 }
 
 .logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: -2px;
+    color: var(--accent);
+}
+
+.tagline {
+    font-size: 0.7rem;
+    margin: 5px 0 15px;
     font-weight: bold;
-    font-size: 1.5rem;
-    color: var(--primary);
+    color: #999;
 }
 
-nav ul {
+.main-nav {
+    background: var(--accent);
+}
+
+.main-nav ul {
     display: flex;
+    justify-content: center;
     list-style: none;
-    gap: 15px;
+    margin: 0;
+    padding: 0;
 }
 
-nav a {
-    color: var(--text);
+.main-nav a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
     text-decoration: none;
-    font-size: 0.8rem;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: 0.3s;
 }
 
-#hero {
-    height: 70vh;
+.main-nav a:hover {
+    background: var(--lemon);
+    color: var(--accent);
+}
+
+/* Hero / Featured */
+.hero-news {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.featured-card {
+    background: #eee;
+    height: 350px;
+    display: flex;
+    align-items: flex-end;
+    padding: 30px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url('https://via.placeholder.com/1200x600/eaff00/ffffff?text=Feature+Image');
+    background-size: cover;
+}
+
+.badge {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: var(--lemon);
+    padding: 5px 15px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.featured-card h2 {
+    color: #fff;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+/* News List */
+.news-list {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.section-label {
+    border-left: 8px solid var(--lemon);
+    padding-left: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+
+.articles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.post-card {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.post-thumb {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #f0f0f0;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    background: linear-gradient(135deg, #111111, #440022);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+    color: #ccc;
 }
 
-.hero-content h1 {
-    font-size: clamp(2.5rem, 8vw, 4rem);
+.post-meta {
+    font-size: 0.75rem;
+    margin-bottom: 5px;
+}
+
+.cat {
+    background: var(--lemon);
+    padding: 2px 8px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.post-card h4 {
     margin: 0;
-    color: var(--primary);
+    font-size: 1.1rem;
+    line-height: 1.4;
 }
 
-.btn {
-    display: inline-block;
-    padding: 10px 30px;
-    background: var(--primary);
-    color: white;
-    text-decoration: none;
-    border-radius: 25px;
-    margin-top: 20px;
-}
-
-#about {
-    padding: 80px 20px;
-    text-align: center;
-}
-
+/* Footer */
 footer {
     text-align: center;
-    padding: 40px;
-    font-size: 0.7rem;
-    color: #666;
+    padding: 60px;
+    background: var(--light-gray);
+    margin-top: 60px;
+    font-size: 0.8rem;
+}
+
+/* Smartphone */
+@media (max-width: 768px) {
+    .logo { font-size: 1.8rem; }
+    .main-nav a { padding: 12px 10px; font-size: 0.75rem; }
+    .featured-card h2 { font-size: 1.3rem; }
 }

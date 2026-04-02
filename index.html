@@ -5,20 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LEMON DROP | エンタメカルチャーメディア</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
-        <div class="header-inner">
-            <div class="logo">LEMON DROP</div>
-            <p class="tagline">甘くて刺激的なカルチャーをお届け</p>
+        <div class="header-upper">
             <div class="header-sns">
-                <a href="#"><i class="fab fa-x-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="logo-container">
+                <h1 class="logo">LEMON DROP</h1>
+                <p class="tagline">Sweet but Poison - カルチャーの「今」を切り取る</p>
+            </div>
+            <div class="header-search">
+                <i class="fas fa-search"></i>
             </div>
         </div>
+        
         <nav class="main-nav">
             <ul>
                 <li><a href="#">新着</a></li>
@@ -30,30 +38,92 @@
     </header>
 
     <main>
-        <section class="news-list">
-            <h3 class="section-label">LATEST ARTICLES</h3>
+        <section class="hero-section">
+            <div class="featured-post">
+                <div class="featured-img-placeholder">
+                    <span class="badge">PICKUP</span>
+                </div>
+                <div class="featured-info">
+                    <span class="cat-label">特集</span>
+                    <h2>【2026年最新】次世代を担うクリエイター10選。LEMON DROPが注目する才能とは？</h2>
+                    <time>2026.04.03</time>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-area">
+            <h3 class="section-title">LATEST ARTICLES</h3>
+            
             <div class="articles-grid">
-                
                 <article class="post-card">
-                    <div class="post-thumb"><span>SAMPLE IMAGE</span></div>
-                    <div class="post-meta">
-                        <span class="cat">インタビュー</span>
-                        <time>2026.04.03</time>
+                    <div class="post-thumb">
+                        <div class="thumb-placeholder">PHOTO</div>
                     </div>
-                    <h4>注目の新星ユニット独占取材</h4>
-                    <div class="post-share">
-                        <span>SHARE:</span>
-                        <a href="#"><i class="fab fa-x-twitter"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    <div class="post-body">
+                        <div class="post-meta">
+                            <span class="cat cat-interview">インタビュー</span>
+                            <time>2026.04.03</time>
+                        </div>
+                        <h4>独占取材：新ユニット「Lemonade Soul」が語る、結成の舞台裏と未来。</h4>
+                        <div class="post-share">
+                            <a href="#"><i class="fab fa-x-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </div>
                     </div>
                 </article>
 
-                </div>
+                <article class="post-card">
+                    <div class="post-thumb">
+                        <div class="thumb-placeholder">PHOTO</div>
+                    </div>
+                    <div class="post-body">
+                        <div class="post-meta">
+                            <span class="cat cat-report">レポート</span>
+                            <time>2026.04.02</time>
+                        </div>
+                        <h4>【ライブレポ】熱狂のステージ。春の大型フェスでのパフォーマンスを徹底解説。</h4>
+                        <div class="post-share">
+                            <a href="#"><i class="fab fa-x-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="post-card">
+                    <div class="post-thumb">
+                        <div class="thumb-placeholder">PHOTO</div>
+                    </div>
+                    <div class="post-body">
+                        <div class="post-meta">
+                            <span class="cat cat-feature">特集</span>
+                            <time>2026.04.01</time>
+                        </div>
+                        <h4>山口テクノが選ぶ、今こそ持ち歩きたいヴィンテージレンズ3選。</h4>
+                        <div class="post-share">
+                            <a href="#"><i class="fab fa-x-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="more-btn">
+                <a href="#">もっと見る</a>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 LEMON DROP / Yamaguchi Techno</p>
+        <div class="footer-inner">
+            <div class="footer-logo">LEMON DROP</div>
+            <div class="footer-links">
+                <a href="#">運営会社</a>
+                <a href="#">プライバシーポリシー</a>
+                <a href="#">お問い合わせ</a>
+            </div>
+            <p class="copyright">&copy; 2026 LEMON DROP / Yamaguchi Techno</p>
+        </div>
     </footer>
+
 </body>
 </html>

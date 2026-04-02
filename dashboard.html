@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Creator Dashboard | おとなレモン</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>body { font-family: 'Noto Sans JP', sans-serif; background: #000; color: #fff; }</style>
+</head>
+<body class="p-8">
+    <div class="max-w-5xl mx-auto">
+        <header class="flex justify-between items-center mb-12">
+            <h1 class="text-xl font-black italic">CREATOR <span class="text-yellow-400">CENTER</span></h1>
+            <div class="text-right">
+                <p class="text-[10px] text-gray-500 uppercase">Welcome back</p>
+                <p class="font-bold">サキ 様</p>
+            </div>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div class="bg-zinc-900 p-8 rounded-[2rem] border border-white/10">
+                <p class="text-[10px] text-gray-500 mb-2">今月の推定収益</p>
+                <p class="text-4xl font-black text-yellow-400">¥128,400</p>
+            </div>
+            <div class="bg-zinc-900 p-8 rounded-[2rem] border border-white/10">
+                <p class="text-[10px] text-gray-500 mb-2">有料会員数</p>
+                <p class="text-4xl font-black">86 <span class="text-xs text-gray-400">人</span></p>
+            </div>
+            <div class="bg-zinc-900 p-8 rounded-[2rem] border border-white/10">
+                <p class="text-[10px] text-gray-500 mb-2">総チップ(PPV)</p>
+                <p class="text-4xl font-black">¥42,000</p>
+            </div>
+        </div>
+
+        <div class="bg-zinc-900 p-10 rounded-[3rem] border border-yellow-400/30">
+            <h2 class="text-lg font-black mb-6">新規コンテンツ投稿</h2>
+            <div class="space-y-6">
+                <div class="border-2 border-dashed border-zinc-700 p-12 text-center rounded-2xl hover:border-yellow-400 transition cursor-pointer">
+                    <p class="text-xs text-gray-500">ここに動画・写真をドラッグ＆ドロップ</p>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <select class="bg-black border border-zinc-800 p-4 rounded-xl text-xs outline-none">
+                        <option>全体公開</option>
+                        <option>限定プラン会員のみ</option>
+                        <option>PPV（単品販売）</option>
+                    </select>
+                    <input type="number" placeholder="価格（PPVの場合）" class="bg-black border border-zinc-800 p-4 rounded-xl text-xs outline-none">
+                </div>
+                <button class="w-full bg-yellow-400 text-black py-4 rounded-full font-black">アップロードを開始する</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

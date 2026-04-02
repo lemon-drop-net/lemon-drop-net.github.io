@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEMON DROP VIDEO | PLATFORM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Noto Sans JP', sans-serif; background-color: #050505; color: #fff; }
+        .text-lemon { color: #fef08a; }
+        .bg-lemon { background-color: #fef08a; }
+        .rank-badge { font-size: 8px; padding: 2px 6px; border-radius: 4px; font-weight: 900; }
+        .video-card:hover img { transform: scale(1.05); filter: brightness(1.2); }
+    </style>
+</head>
+<body class="pb-20">
+    <header class="p-4 border-b border-zinc-800 flex justify-between items-center sticky top-0 bg-black/90 backdrop-blur z-50">
+        <a href="index.html" class="text-xs font-black text-gray-500">← EXIT</a>
+        <h1 class="text-xl font-black italic tracking-tighter">LEMON DROP <span class="text-lemon">VIDEO</span></h1>
+        <div class="bg-zinc-800 px-3 py-1 rounded-full text-[10px] font-bold">LOGIN</div>
+    </header>
+
+    <nav class="flex gap-4 p-6 overflow-x-auto no-scrollbar max-w-5xl mx-auto">
+        <button class="text-lemon border-b-2 border-lemon pb-1 font-black whitespace-nowrap">NEWEST</button>
+        <button class="text-gray-500 hover:text-white whitespace-nowrap">POPULAR</button>
+        <button class="text-gray-500 hover:text-white whitespace-nowrap">MODELS</button>
+        <button class="text-gray-500 hover:text-white whitespace-nowrap">FREE ONLY</button>
+    </nav>
+
+    <main class="max-w-5xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="video-card group cursor-pointer">
+                <div class="relative aspect-video bg-zinc-900 rounded-xl overflow-hidden mb-3">
+                    <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover transition duration-500">
+                    <span class="absolute bottom-2 right-2 bg-black/80 text-white text-[10px] px-2 py-1 rounded">03:45</span>
+                    <span class="absolute top-2 left-2 bg-green-500 text-black rank-badge italic">FREE</span>
+                </div>
+                <h3 class="font-bold text-sm mb-1 group-hover:text-lemon transition">【Making】LEMON DROP 撮影の裏側 - HANA</h3>
+                <p class="text-[10px] text-gray-500">Model: HANA | 1.2k Views</p>
+            </div>
+
+            <div class="video-card group cursor-pointer opacity-80 hover:opacity-100">
+                <div class="relative aspect-video bg-zinc-900 rounded-xl overflow-hidden mb-3">
+                    <div class="absolute inset-0 bg-black/60 flex flex-col items-center justify-center z-10">
+                        <span class="text-2xl mb-2">🔒</span>
+                        <span class="text-[10px] font-bold text-white/50">SILVER MEMBER ONLY</span>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover blur-sm">
+                    <span class="absolute top-2 left-2 bg-gray-400 text-black rank-badge italic">SILVER</span>
+                </div>
+                <h3 class="font-bold text-sm mb-1">【限定公開】モデルMEIのプライベート自撮り動画</h3>
+                <p class="text-[10px] text-gray-500">Model: MEI | Unlock to watch</p>
+            </div>
+
+            <div class="video-card group cursor-pointer opacity-80 hover:opacity-100">
+                <div class="relative aspect-video bg-zinc-900 rounded-xl overflow-hidden mb-3 border border-lemon/20">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex flex-col items-end justify-end p-4 z-10">
+                        <span class="text-lemon text-[10px] font-black italic">VIP GOLD CONTENT</span>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1496337589254-7e19d01ced44?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover blur-md">
+                    <span class="absolute top-2 left-2 bg-lemon text-black rank-badge italic">GOLD</span>
+                </div>
+                <h3 class="font-bold text-sm mb-1">【4K/α7IV】RIN - Extreme Retouch Selection</h3>
+                <p class="text-[10px] text-gray-500">Model: RIN | VIP Plan Required</p>
+            </div>
+
+        </div>
+
+        <div class="mt-20 border-2 border-dashed border-zinc-800 rounded-3xl p-10 text-center">
+            <h4 class="text-xl font-black mb-2 text-gray-400">ARE YOU A CREATOR?</h4>
+            <p class="text-xs text-gray-600 mb-6 font-bold uppercase tracking-widest italic">山口チームがあなたの動画を「毒のある美しさ」へ昇華させます</p>
+            <button class="bg-white text-black px-10 py-4 rounded-full font-black text-xs hover:bg-lemon transition">動画をアップロードして審査を受ける</button>
+        </div>
+    </main>
+</body>
+</html>

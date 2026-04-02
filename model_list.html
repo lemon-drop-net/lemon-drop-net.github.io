@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODELS | LEMON DROP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Noto Sans JP', sans-serif; background-color: #fff; color: #333; }
+        .text-lemon { color: #facc15; }
+        .bg-lemon { background-color: #fef08a; }
+        .model-card img { transition: transform 0.5s ease; }
+        .model-card:hover img { transform: scale(1.05); }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <header class="p-6 bg-white border-b border-gray-100 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="font-black text-gray-400 hover:text-lemon">← BACK</a>
+            <h1 class="text-2xl font-black italic tracking-tighter">LEMON DROP <span class="text-lemon">MODELS</span></h1>
+            <div class="w-10"></div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto py-12 px-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            
+            <div class="model-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition">
+                <div class="aspect-[3/4] bg-lemon overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?auto=format&fit=crop&w=400&q=80" alt="Model" class="w-full h-full object-cover">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="font-black text-lg">HANA</h3>
+                    <p class="text-xs text-gray-400">162cm / 透明感・清楚系</p>
+                </div>
+            </div>
+
+            <div class="model-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition">
+                <div class="aspect-[3/4] bg-lemon overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80" alt="Model" class="w-full h-full object-cover">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="font-black text-lg">MEI</h3>
+                    <p class="text-xs text-gray-400">158cm / ポートレート・地雷系</p>
+                </div>
+            </div>
+
+            <div class="model-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition">
+                <div class="aspect-[3/4] bg-lemon overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1531746020798-e795c5399c5c?auto=format&fit=crop&w=400&q=80" alt="Model" class="w-full h-full object-cover">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="font-black text-lg">RIN</h3>
+                    <p class="text-xs text-gray-400">165cm / クール・モード</p>
+                </div>
+            </div>
+
+            <div class="model-card bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition">
+                <div class="aspect-[3/4] bg-lemon overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80" alt="Model" class="w-full h-full object-cover">
+                </div>
+                <div class="p-4 text-center">
+                    <h3 class="font-black text-lg">YUI</h3>
+                    <p class="text-xs text-gray-400">155cm / サブカル・エモ</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="py-20 text-center text-gray-300 text-xs">
+        © 2026 LEMON DROP MANAGEMENT
+    </footer>
+</body>
+</html>

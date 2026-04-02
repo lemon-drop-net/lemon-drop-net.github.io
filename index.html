@@ -3,35 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LEMON DROP | Digital Gravure Media</title>
+    <title>LEMON DROP | エンタメカルチャーメディア</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav>
+        <div class="header-inner">
             <div class="logo">LEMON DROP</div>
+            <p class="tagline">甘くて刺激的なカルチャーをお届け</p>
+        </div>
+        <nav class="main-nav">
             <ul>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="https://lemondrop.themedia.jp/">OFFICIAL</a></li>
+                <li><a href="#">新着</a></li>
+                <li><a href="#">インタビュー</a></li>
+                <li><a href="#">レポート</a></li>
+                <li><a href="#">特集</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="hero">
-            <div class="hero-content">
-                <h1>LEMON DROP</h1>
-                <p>Sweet but Poison.</p>
-                <a href="#about" class="btn">ENTER</a>
+        <section class="hero-news">
+            <div class="featured-card">
+                <div class="badge">PICKUP</div>
+                <div class="card-content">
+                    <h2>【特集】2026年、地下アイドルシーンの現在地を追う。</h2>
+                </div>
             </div>
         </section>
 
-        <section id="about">
-            <h2>Web Media Project</h2>
-            <p>2026.04 STARTING</p>
+        <section class="news-list">
+            <h3 class="section-label">LATEST ARTICLES</h3>
+            <div class="articles-grid">
+                <article class="post-card">
+                    <div class="post-thumb"><span>SAMPLE IMAGE</span></div>
+                    <div class="post-meta"><span class="cat">インタビュー</span><time>2026.04.03</time></div>
+                    <h4>注目の新星ユニット「LEMON GRADATION」独占取材</h4>
+                </article>
+                <article class="post-card">
+                    <div class="post-thumb"><span>SAMPLE IMAGE</span></div>
+                    <div class="post-meta"><span class="cat">レポート</span><time>2026.04.02</time></div>
+                    <h4>【ライブレポ】熱狂の夜。赤坂某所でのファイナル公演。</h4>
+                </article>
+                <article class="post-card">
+                    <div class="post-thumb"><span>SAMPLE IMAGE</span></div>
+                    <div class="post-meta"><span class="cat">特集</span><time>2026.04.01</time></div>
+                    <h4>春のポートレート撮影、おすすめ機材とライティング術。</h4>
+                </article>
+            </div>
         </section>
     </main>
 
-    <footer>&copy; 2026 LEMON DROP / Yamaguchi Techno</footer>
+    <footer>
+        <p>&copy; 2026 LEMON DROP / Yamaguchi Techno</p>
+    </footer>
 </body>
 </html>

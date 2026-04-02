@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LEMON DROP | INFLUENCER & CREATORS</title>
+    <title>おとなレモン | 公式クリエイターアーカイブ</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;900&display=swap" rel="stylesheet">
     <style>
@@ -11,74 +11,76 @@
         .text-lemon { color: #facc15; }
         .bg-lemon { background-color: #fef08a; }
         .hot-badge { background: linear-gradient(45deg, #facc15, #fbbf24); }
-        /* アニメーション：ふわっと表示 */
-        .fade-in { animation: fadeIn 0.8s ease forwards; }
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); }
     </style>
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-50 flex flex-col min-h-screen">
 
-    <header class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100 p-4">
+    <header class="bg-white/95 backdrop-blur-md sticky top-0 z-50 border-b border-gray-100 p-4">
         <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-black tracking-tighter italic">LEMON <span class="text-lemon">DROP</span></h1>
-            <nav class="hidden md:flex gap-6 text-[10px] font-black tracking-widest">
-                <a href="#" class="hover:text-lemon">MODELS</a>
-                <a href="#" class="hover:text-lemon">RANKING</a>
-                <a href="#" class="hover:text-lemon">JOIN US</a>
+            <h1 class="text-2xl font-black tracking-tighter italic">おとな<span class="text-lemon">レモン</span></h1>
+            <nav class="hidden md:flex gap-6 text-[10px] font-black tracking-widest text-gray-500">
+                <a href="#" class="hover:text-lemon transition">MODELS</a>
+                <a href="#" class="hover:text-lemon transition">RANKING</a>
+                <a href="#" class="hover:text-lemon transition">POINT SHOP</a>
             </nav>
-            <button class="bg-black text-white text-[10px] font-black px-5 py-2 rounded-full shadow-lg">LOGIN</button>
+            <div class="flex items-center gap-3">
+                <span class="text-[10px] font-bold text-gray-400">0 pt</span>
+                <button class="bg-black text-white text-[10px] font-black px-5 py-2 rounded-full">LOGIN</button>
+            </div>
         </div>
     </header>
 
-    <section class="max-w-6xl mx-auto px-6 py-12">
-        <div class="flex items-center gap-3 mb-8">
-            <span class="hot-badge text-white text-[10px] font-black px-3 py-1 rounded-full italic shadow-md">HOT CREATORS</span>
-            <h2 class="text-xl font-black italic">今、注目の演者・モデル</h2>
+    <main class="flex-grow max-w-6xl mx-auto px-6 py-12">
+        <div class="flex items-center justify-between mb-8">
+            <div class="flex items-center gap-3">
+                <span class="hot-badge text-white text-[10px] font-black px-3 py-1 rounded-full italic shadow-md">HOT CREATORS</span>
+                <h2 class="text-xl font-black italic">注目クリエイター</h2>
+            </div>
+            <select class="bg-transparent text-[10px] font-bold text-gray-400 outline-none">
+                <option>ランダム表示</option>
+                <option>人気順</option>
+                <option>新着順</option>
+            </select>
         </div>
 
-        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4" id="creator-grid">
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 lg:gap-6">
+            
+            <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 card-hover transition-all duration-300">
+                <div class="aspect-[3/4] bg-gray-200"><img src="https://picsum.photos/seed/saki/400/533" class="w-full h-full object-cover"></div>
+                <div class="p-3 text-center"><p class="text-[8px] font-black text-lemon tracking-widest uppercase mb-1">地下アイドル</p><h4 class="font-black text-sm">サキ</h4><span class="text-[8px] text-gray-400">#王道系</span></div>
             </div>
-    </section>
-
-    <section class="max-w-6xl mx-auto px-6 pb-20">
-        <div class="bg-zinc-900 rounded-[2.5rem] p-10 md:p-16 text-center text-white overflow-hidden relative">
-            <div class="relative z-10">
-                <p class="text-lemon text-[10px] font-black tracking-[0.3em] mb-4">FOR INFLUENCERS & IDOLS</p>
-                <h3 class="text-3xl md:text-4xl font-black mb-6">あなたの「瞬間」を、<br>最高の価値に変える。</h3>
-                <p class="text-xs text-gray-400 mb-10 max-w-lg mx-auto leading-relaxed">
-                    スマホの自撮りから、α7IVによる本格グラビアまで。<br>「大人ドロップ」は、あなたの個性を最大限に引き出し、収益化をサポートします。
-                </p>
-                <button class="bg-white text-black px-12 py-4 rounded-full font-black text-sm hover:bg-lemon transition duration-300">スカウトDMの確認・登録はこちら</button>
+            <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 card-hover transition-all duration-300">
+                <div class="aspect-[3/4] bg-gray-200"><img src="https://picsum.photos/seed/rena/400/533" class="w-full h-full object-cover"></div>
+                <div class="p-3 text-center"><p class="text-[8px] font-black text-lemon tracking-widest uppercase mb-1">インフルエンサー</p><h4 class="font-black text-sm">RENA</h4><span class="text-[8px] text-gray-400">#地雷系</span></div>
             </div>
-            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[15rem] font-black text-white/[0.03] italic select-none">LEMON</div>
-        </div>
-    </section>
+            <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 card-hover transition-all duration-300">
+                <div class="aspect-[3/4] bg-gray-200"><img src="https://picsum.photos/seed/mia/400/533" class="w-full h-full object-cover"></div>
+                <div class="p-3 text-center"><p class="text-[8px] font-black text-lemon tracking-widest uppercase mb-1">コスプレイヤー</p><h4 class="font-black text-sm">みあ</h4><span class="text-[8px] text-gray-400">#サブカル</span></div>
+            </div>
+            <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 card-hover transition-all duration-300">
+                <div class="aspect-[3/4] bg-gray-200"><img src="https://picsum.photos/seed/nanami/400/533" class="w-full h-full object-cover"></div>
+                <div class="p-3 text-center"><p class="text-[8px] font-black text-lemon tracking-widest uppercase mb-1">被写体モデル</p><h4 class="font-black text-sm">ななみ</h4><span class="text-[8px] text-gray-400">#透明感</span></div>
+            </div>
+            <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 card-hover transition-all duration-300">
+                <div class="aspect-[3/4] bg-gray-200"><img src="https://picsum.photos/seed/yuri/400/533" class="w-full h-full object-cover"></div>
+                <div class="p-3 text-center"><p class="text-[8px] font-black text-lemon tracking-widest uppercase mb-1">グラビア</p><h4 class="font-black text-sm">ユリ</h4><span class="text-[8px] text-gray-400">#お姉さん</span></div>
+            </div>
 
-    <script>
-        // 架空のクリエイターデータ 20名
-        const creators = [
-            { name: "サキ", type: "地下アイドル", tag: "王道系" },
-            { name: "RENA", type: "インフルエンサー", tag: "地雷系" },
-            { name: "みあ", type: "コスプレイヤー", tag: "サブカル" },
-            { name: "ななみ", type: "被写体モデル", tag: "透明感" },
-            { name: "ユリ", type: "グラビア", tag: "お姉さん" },
-            { name: "める", type: "コンカフェ嬢", tag: "甘め" },
-            { name: "KAORI", type: "役者", tag: "クール" },
-            { name: "しおん", type: "TikToker", tag: "ダンス" },
-            { name: "ひな", type: "アイドル", tag: "清楚系" },
-            { name: "ERIKA", type: "DJ", tag: "サイバー" },
-            { name: "つむぎ", type: "被写体", tag: "エモい" },
-            { name: "のあ", type: "ライバー", tag: "癒やし" },
-            { name: "MAI", type: "ダンサー", tag: "パワフル" },
-            { name: "こころ", type: "学生モデル", tag: "フレッシュ" },
-            { name: "くるみ", type: "インフルエンサー", tag: "毒っ気" },
-            { name: "ASUKA", type: "レースクイーン", tag: "高身長" },
-            { name: "ゆあ", type: "コンセプトモデル", tag: "ゴシック" },
-            { name: "りおん", type: "声優卵", tag: "萌え" },
-            { name: "Mizuki", type: "フリーモデル", tag: "モード" },
-            { name: "ニコ", type: "VTuber中の人", tag: "ミステリアス" }
-        ];
-
-        // ランダムにシャッフルする関数
-        const shuffle = ([...array]) => {
-            for (let i =
+            <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 card-hover transition-all duration-300">
+                <div class="aspect-[3/4] bg-gray-200"><img src="https://picsum.photos/seed/meru/400/533" class="w-full h-full object-cover"></div>
+                <div class="p-3 text-center"><p class="text-[8px] font-black text-lemon tracking-widest uppercase mb-1">コンカフェ嬢</p><h4 class="font-black text-sm">める</h4><span class="text-[8px] text-gray-400">#甘め</span></div>
+            </div>
+            <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 card-hover transition-all duration-300">
+                <div class="aspect-[3/4] bg-gray-200"><img src="https://picsum.photos/seed/kaori/400/533" class="w-full h-full object-cover"></div>
+                <div class="p-3 text-center"><p class="text-[8px] font-black text-lemon tracking-widest uppercase mb-1">役者</p><h4 class="font-black text-sm">KAORI</h4><span class="text-[8px] text-gray-400">#クール</span></div>
+            </div>
+            <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 card-hover transition-all duration-300">
+                <div class="aspect-[3/4] bg-gray-200"><img src="https://picsum.photos/seed/shion/400/533" class="w-full h-full object-cover"></div>
+                <div class="p-3 text-center"><p class="text-[8px] font-black text-lemon tracking-widest uppercase mb-1">TikToker</p><h4 class="font-black text-sm">しおん</h4><span class="text-[8px] text-gray-400">#ダンス</span></div>
+            </div>
+            <div class="bg-white rounded-2xl overflow-hidden border border-gray-100 card-hover transition-all duration-300">
+                <div class="aspect-[3/4] bg-gray-200"><img src="https://picsum.photos/seed/hina/400/533" class="w-full h-full object-cover"></div>
+                <div class="p-3 text-center"><p class="text-[8px] font-black text-lemon tracking-widest uppercase mb-1">アイドル</p><h4 class="font-black text-sm">ひな</h4><span class="text-[8px] text-gray-400">#清楚系</span></div>
+            </div>
+            <div class="bg-white rounded-2xl overflow-hidden border border-gray-10

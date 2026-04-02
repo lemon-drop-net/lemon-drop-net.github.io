@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREATORS | LEMON DROP GUILD</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Noto Sans JP', sans-serif; background-color: #000; color: #fff; }
+        .text-lemon { color: #fef08a; }
+        .border-lemon { border-color: #fef08a; }
+        /* 写真をα7IV風に怪しく見せるエフェクト */
+        .creator-photo {
+            filter: grayscale(30%) contrast(110%);
+            transition: all 0.3s ease;
+            object-fit: cover;
+        }
+        .creator-card:hover .creator-photo {
+            filter: grayscale(0%) contrast(100%);
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body>
+    <header class="p-6 border-b border-gray-800">
+        <a href="index.html" class="text-xl font-black text-lemon">← BACK TO TOP</a>
+    </header>
+
+    <main class="max-w-6xl mx-auto py-16 px-6">
+        <h2 class="text-5xl font-black mb-16 italic border-b-4 border-lemon pb-4 inline-block">GUILD CREATORS</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            
+            <div class="bg-zinc-900 rounded-2xl overflow-hidden border border-gray-800 creator-card shadow-lg hover:border-lemon transition">
+                <div class="aspect-[4/3] bg-zinc-800 flex items-center justify-center border-b border-gray-800">
+                    <span class="text-gray-600 text-xs">PHOTO BY KENTO (α7IV)</span>
+                </div>
+                <div class="p-6">
+                    <span class="inline-block px-3 py-1 bg-yellow-500/10 text-lemon text-xs font-bold rounded-full mb-3">COSTUME DESIGN</span>
+                    <h3 class="text-2xl font-black mb-2">LUNA</h3>
+                    <p class="text-sm text-gray-400 mb-4">地雷系・サブカル衣装の「現場リメイク」職人。カメラ映りと動きやすさを両立させる天才。 </p>
+                    <div class="flex space-x-2 text-gray-600 text-xs">
+                        <span>#衣装直し</span> <span>#リメイク</span> <span>#nano_banana</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-zinc-900 rounded-2xl overflow-hidden border border-gray-800 creator-card shadow-lg hover:border-lemon transition">
+                <div class="aspect-[4/3] bg-zinc-800 flex items-center justify-center border-b border-gray-800">
+                    <span class="text-gray-600 text-xs">PHOTO BY KENTO (α7IV)</span>
+                </div>
+                <div class="p-6">
+                    <span class="inline-block px-3 py-1 bg-yellow-500/10 text-lemon text-xs font-bold rounded-full mb-3">SOUND PRODUCTION</span>
+                    <h3 class="text-2xl font-black mb-2">KENTO AI</h3>
+                    <p class="text-sm text-gray-400 mb-4">地下アイドルのSEからMV用音源編集まで。サイバーな音作りを得意とするサウンドデザイナー。</p>
+                    <div class="flex space-x-2 text-gray-600 text-xs">
+                        <span>#SE制作</span> <span>#音源編集</span> <span>#nano_banana</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-zinc-900 rounded-2xl overflow-hidden border border-gray-800 creator-card shadow-lg hover:border-lemon transition">
+                <div class="aspect-[4/3] bg-zinc-800 flex items-center justify-center border-b border-gray-800">
+                    <span class="text-gray-600 text-xs">PHOTO BY KENTO (α7IV)</span>
+                </div>
+                <div class="p-6">
+                    <span class="inline-block px-3 py-1 bg-yellow-500/10 text-lemon text-xs font-bold rounded-full mb-3">ART & RETOUCH</span>
+                    <h3 class="text-2xl font-black mb-2">MOMO</h3>
+                    <p class="text-sm text-gray-400 mb-4">自撮り・宣材写真の「顔面顧問」。告知用フライヤーテンプレート制作やロゴデザインも。 </p>
+                    <div class="flex space-x-2 text-gray-600 text-xs">
+                        <span>#レタッチ</span> <span>#ロゴ制作</span> <span>#nano_banana</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-20 text-center">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdyHq5V263n6H6e-A6FpWunp29xP7H1_1I-Tz0z99HwXF7XhA/viewform" 
+               class="inline-block text-center bg-zinc-900 text-lemon font-black px-10 py-5 rounded-2xl text-xl hover:bg-zinc-800 transition">
+                このクリエイターたちに仕事を頼む
+            </a>
+        </div>
+    </main>
+
+    <footer class="py-10 text-center text-gray-600 text-xs">
+        © 2026 LEMON DROP GUILD - All creators powered by nano banana
+    </footer>
+</body>
+</html>

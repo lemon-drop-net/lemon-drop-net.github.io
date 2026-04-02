@@ -13,10 +13,7 @@
         .border-lemon { border-color: #fef08a; }
         .creator-card { transition: all 0.3s ease; }
         .creator-card:hover { transform: translateY(-5px); border-color: #fef08a; }
-        /* スクロールバーのカスタマイズ（毒々しく） */
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #111; }
-        ::-webkit-scrollbar-thumb { background: #fef08a; border-radius: 10px; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
     </style>
 </head>
 <body class="pb-20">
@@ -56,14 +53,14 @@
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
             
             <div class="bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden creator-card relative">
-                <div class="absolute top-2 right-2 bg-lemon text-black text-[10px] font-black px-2 py-1 rounded shadow-lg z-10">LD認証</div>
-                <img src="photo-luna.jpg" class="w-full aspect-square object-cover grayscale-[30%]">
+                <div class="absolute top-2 right-2 bg-lemon text-black text-[10px] font-black px-2 py-1 rounded shadow-lg z-10 italic">LD認証</div>
+                <img src="photo-luna.jpg" class="w-full aspect-square object-cover">
                 <div class="p-3">
                     <div class="flex justify-between items-start mb-1">
                         <h3 class="font-black text-sm">LUNA</h3>
                         <span class="text-lemon text-[10px]">★ 4.9</span>
                     </div>
-                    <p class="text-[10px] text-gray-400 mb-3 leading-tight">衣装リメイク・現場対応可能</p>
+                    <p class="text-[10px] text-gray-400 mb-3 leading-tight">衣装制作・現場リメイク</p>
                     <div class="flex flex-wrap gap-1">
                         <span class="text-[8px] border border-zinc-700 px-1 text-gray-500">相模原</span>
                         <span class="text-[8px] border border-zinc-700 px-1 text-gray-500">地雷系</span>
@@ -72,14 +69,14 @@
             </div>
 
             <div class="bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden creator-card relative">
-                <div class="absolute top-2 right-2 bg-lemon text-black text-[10px] font-black px-2 py-1 rounded shadow-lg z-10">LD認証</div>
-                <img src="photo-kento.jpg" class="w-full aspect-square object-cover grayscale-[30%]">
+                <div class="absolute top-2 right-2 bg-lemon text-black text-[10px] font-black px-2 py-1 rounded shadow-lg z-10 italic">LD認証</div>
+                <img src="photo-kento.jpg" class="w-full aspect-square object-cover">
                 <div class="p-3">
                     <div class="flex justify-between items-start mb-1">
                         <h3 class="font-black text-sm">KENTO AI</h3>
                         <span class="text-lemon text-[10px]">★ 5.0</span>
                     </div>
-                    <p class="text-[10px] text-gray-400 mb-3 leading-tight">楽曲制作・エンジニアリング</p>
+                    <p class="text-[10px] text-gray-400 mb-3 leading-tight">楽曲制作・エンジニア</p>
                     <div class="flex flex-wrap gap-1">
                         <span class="text-[8px] border border-zinc-700 px-1 text-gray-500">オンライン</span>
                         <span class="text-[8px] border border-zinc-700 px-1 text-gray-500">サイバー</span>
@@ -88,8 +85,27 @@
             </div>
 
             <div class="bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden creator-card relative">
-                <div class="absolute top-2 right-2 bg-lemon text-black text-[10px] font-black px-2 py-1 rounded shadow-lg z-10">LD認証</div>
-                <img src="photo-momo.jpg" class="w-full aspect-square object-cover grayscale-[30%]">
+                <div class="absolute top-2 right-2 bg-lemon text-black text-[10px] font-black px-2 py-1 rounded shadow-lg z-10 italic">LD認証</div>
+                <img src="photo-momo.jpg" class="w-full aspect-square object-cover">
                 <div class="p-3">
                     <div class="flex justify-between items-start mb-1">
-                        <h3 class="font-
+                        <h3 class="font-black text-sm text-white">MOMO</h3>
+                        <span class="text-lemon text-[10px]">★ 4.8</span>
+                    </div>
+                    <p class="text-[10px] text-gray-400 mb-3 leading-tight">顔面顧問・神レタッチ</p>
+                    <div class="flex flex-wrap gap-1">
+                        <span class="text-[8px] border border-zinc-700 px-1 text-gray-500">全国</span>
+                        <span class="text-[8px] border border-zinc-700 px-1 text-gray-500">レタッチ</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-zinc-900 border-2 border-dashed border-zinc-800 rounded-xl overflow-hidden creator-card flex flex-col items-center justify-center p-6 text-zinc-600 hover:text-lemon hover:border-lemon">
+                <div class="text-3xl mb-1">+</div>
+                <p class="text-[10px] font-black">BE A MEMBER</p>
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>

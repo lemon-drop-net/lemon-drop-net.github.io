@@ -1,176 +1,43 @@
-:root {
-    --lemon: #eaff00; /* さわやかなレモン色 */
-    --accent: #333333; /* 引き締め用の濃いグレー */
-    --bg-white: #ffffff;
-    --light-gray: #f8f8f8;
+:/* --- 前回のコードに以下を追記・調整 --- */
+
+.header-sns {
+    margin-bottom: 15px;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    background-color: var(--bg-white);
+.header-sns a {
     color: var(--accent);
-    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.2rem;
+    margin: 0 10px;
+    transition: 0.3s;
 }
 
-/* Header */
-header {
-    background: var(--bg-white);
-    border-bottom: 4px solid var(--lemon);
-    text-align: center;
-    padding-top: 20px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+.header-sns a:hover {
+    color: var(--lemon);
 }
 
-.logo {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.5rem;
-    font-weight: 800;
-    letter-spacing: -2px;
-    color: var(--accent);
-}
-
-.tagline {
+/* 記事ごとのシェアボタン */
+.post-share {
+    margin-top: 15px;
     font-size: 0.7rem;
-    margin: 5px 0 15px;
-    font-weight: bold;
     color: #999;
-}
-
-.main-nav {
-    background: var(--accent);
-}
-
-.main-nav ul {
     display: flex;
-    justify-content: center;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    align-items: center;
+    gap: 10px;
 }
 
-.main-nav a {
-    display: block;
-    padding: 15px 20px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
+.post-share a {
+    color: #ccc;
     font-size: 0.9rem;
     transition: 0.3s;
 }
 
-.main-nav a:hover {
-    background: var(--lemon);
+.post-share a:hover {
     color: var(--accent);
 }
 
-/* Hero / Featured */
-.hero-news {
-    padding: 20px;
+/* WP移行を見据えたコンテナ設定 */
+main {
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.featured-card {
-    background: #eee;
-    height: 350px;
-    display: flex;
-    align-items: flex-end;
-    padding: 30px;
-    position: relative;
-    border-radius: 10px;
-    overflow: hidden;
-    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)), url('https://via.placeholder.com/1200x600/eaff00/ffffff?text=Feature+Image');
-    background-size: cover;
-}
-
-.badge {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    background: var(--lemon);
-    padding: 5px 15px;
-    font-weight: bold;
-    border-radius: 3px;
-}
-
-.featured-card h2 {
-    color: #fff;
-    font-size: 1.8rem;
-    margin: 0;
-}
-
-/* News List */
-.news-list {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 0 20px;
-}
-
-.section-label {
-    border-left: 8px solid var(--lemon);
-    padding-left: 15px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5rem;
-    margin-bottom: 25px;
-}
-
-.articles-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-
-.post-card {
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.post-thumb {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    background: #f0f0f0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    font-size: 0.8rem;
-    color: #ccc;
-}
-
-.post-meta {
-    font-size: 0.75rem;
-    margin-bottom: 5px;
-}
-
-.cat {
-    background: var(--lemon);
-    padding: 2px 8px;
-    font-weight: bold;
-    margin-right: 10px;
-}
-
-.post-card h4 {
-    margin: 0;
-    font-size: 1.1rem;
-    line-height: 1.4;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 60px;
-    background: var(--light-gray);
-    margin-top: 60px;
-    font-size: 0.8rem;
-}
-
-/* Smartphone */
-@media (max-width: 768px) {
-    .logo { font-size: 1.8rem; }
-    .main-nav a { padding: 12px 10px; font-size: 0.75rem; }
-    .featured-card h2 { font-size: 1.3rem; }
+    min-height: 80vh; /* コンテンツが少なくてもフッターを下げておく */
 }

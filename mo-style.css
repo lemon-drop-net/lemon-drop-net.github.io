@@ -1,3 +1,4 @@
+/* --- 共通カラー設定 --- */
 :root {
     --primary-yellow: #FFEA00;
     --soft-yellow: #FFFBE6;
@@ -17,7 +18,7 @@ body {
     overflow-x: hidden;
 }
 
-/* 共通設定 */
+/* --- 共通レイアウト --- */
 .container {
     max-width: 1000px;
     margin: 0 auto;
@@ -28,7 +29,7 @@ body {
     text-align: center;
 }
 
-/* ヘッダー */
+/* --- ヘッダー --- */
 header {
     padding: 30px 20px;
     text-align: center;
@@ -44,7 +45,7 @@ header {
     color: var(--primary-yellow);
 }
 
-/* ヒーロー */
+/* --- ヒーローエリア --- */
 .hero {
     padding: 100px 20px;
     text-align: center;
@@ -84,16 +85,9 @@ header {
     color: var(--text-main);
 }
 
-.hero-decoration {
-    position: absolute;
-    bottom: 20px;
-    right: 10%;
-    font-size: 3rem;
-    opacity: 0.2;
-    transform: rotate(15deg);
-}
+/* (修正点: 不要なレモンの記述を削除) */
 
-/* コンセプト & タイトル */
+/* --- コンセプト & セクションタイトル共通 --- */
 .section-title {
     margin-bottom: 30px;
 }
@@ -128,7 +122,7 @@ header {
     line-height: 1.8;
 }
 
-/* カード */
+/* --- カテゴリーカード --- */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -144,11 +138,16 @@ header {
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(255, 234, 0, 0.2);
     text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
 }
 
 .card .icon { font-size: 2.5rem; margin-bottom: 15px; }
 
-/* 応募エリア */
+/* --- 応募エリア (修正点あり) --- */
 .apply-box {
     background: var(--soft-yellow);
     padding: 80px 20px;
@@ -166,22 +165,28 @@ header {
 
 .entry-list li {
     margin: 10px 0;
-    padding-left: 25px;
+    padding-left: 30px;
     position: relative;
+    font-size: 0.95rem;
+    font-weight: 500;
 }
 
-.entry-list li::before {
-    content: '🍋';
+/* (修正点: リストアイコンをレモンから「◆」に変更) */
+.entry-list.diamond-marker li::before {
+    content: '◆'; /* ひし形マーク */
     position: absolute;
     left: 0;
+    color: var(--primary-yellow); /* 黄色にする */
+    font-size: 0.8rem;
 }
 
-/* ボタン */
+/* --- ボタンエリア --- */
 .btn-area {
     display: flex;
     gap: 15px;
     justify-content: center;
     margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 .btn {
@@ -189,11 +194,18 @@ header {
     border-radius: 50px;
     text-decoration: none;
     font-weight: 700;
+    font-size: 1rem;
+    transition: all 0.3s;
 }
 
-.main-btn { background: #06C755; color: white; }
-.sub-btn { background: #333; color: white; }
+.main-btn { background: #06C755; color: white; } /* LINE */
+.sub-btn { background: #333; color: white; } /* MAIL */
 
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* --- フッター --- */
 footer {
     padding: 40px;
     text-align: center;

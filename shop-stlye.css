@@ -1,1 +1,181 @@
+/* --- 変数の設定（WordPressのカスタマイザーで変更しやすくするため） --- */
+:root {
+    --primary-color: #fce300; /* レモンイエロー */
+    --accent-color: #333;
+    --text-color: #444;
+    --bg-color: #fffaf0;
+    --white: #ffffff;
+}
 
+/* --- ベーススタイル --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: var(--text-color);
+    background-color: var(--white);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- ヘッダー --- */
+.site-header {
+    padding: 20px 0;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav li {
+    margin-left: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.nav a.active {
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/* --- ヒーローセクション --- */
+.shop-hero {
+    background-color: var(--bg-color);
+    padding: 60px 0;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.shop-hero h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* --- 商品グリッド --- */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.product-card {
+    background: var(--white);
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.product-image {
+    position: relative;
+    background: #f9f9f9;
+}
+
+.product-image img {
+    width: 100%;
+    display: block;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: var(--primary-color);
+    padding: 4px 12px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.badge.sale {
+    background: #ff6b6b;
+    color: white;
+}
+
+.product-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-info h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--accent-color);
+    margin-bottom: 15px;
+}
+
+.price span {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.add-to-cart {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.add-to-cart:hover {
+    opacity: 0.8;
+}
+
+/* --- フッター --- */
+.site-footer {
+    background: var(--accent-color);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* --- レスポンシブ --- */
+@media (max-width: 600px) {
+    .product-grid {
+        grid-template-columns: 1fr 1fr; /* スマホでは2列 */
+        gap: 15px;
+    }
+    .product-info h3 { font-size: 14px; }
+    .price { font-size: 16px; }
+}

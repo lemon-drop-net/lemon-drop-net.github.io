@@ -212,3 +212,86 @@ footer {
     font-size: 0.8rem;
     color: var(--text-sub);
 }
+/* --- 詳細ページ専用スタイル --- */
+.detail-header {
+    padding: 60px 20px;
+    background-color: var(--soft-yellow);
+    margin-bottom: 40px;
+}
+
+.detail-header h1 {
+    font-size: 2.2rem;
+    margin: 10px 0;
+}
+
+.detail-content {
+    padding-bottom: 100px;
+}
+
+/* 募集要項のテーブル風デザイン */
+.info-table {
+    background: var(--white);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(255, 234, 0, 0.15);
+    overflow: hidden;
+}
+
+.info-row {
+    display: flex;
+    border-bottom: 1px solid var(--soft-yellow);
+}
+
+.info-row:last-child {
+    border-bottom: none;
+}
+
+.info-label {
+    width: 30%;
+    background-color: var(--soft-yellow);
+    padding: 30px 20px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.info-label span {
+    position: relative;
+    padding-left: 15px;
+}
+
+.info-label span::before {
+    content: '◆';
+    position: absolute;
+    left: 0;
+    color: var(--primary-yellow);
+    font-size: 0.7rem;
+}
+
+.info-value {
+    width: 70%;
+    padding: 30px;
+    line-height: 1.8;
+}
+
+.small-text {
+    font-size: 0.85rem;
+    color: var(--text-sub);
+    display: block;
+    margin-top: 5px;
+}
+
+/* スマホ対応 */
+@media (max-width: 600px) {
+    .info-row {
+        flex-direction: column;
+    }
+    .info-label {
+        width: 100%;
+        padding: 15px 20px;
+    }
+    .info-value {
+        width: 100%;
+        padding: 20px;
+    }
+}

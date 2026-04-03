@@ -1,204 +1,90 @@
-/* 基本設定 */
-:root {
-    --primary-yellow: #FFEA00;
-    --soft-yellow: #FFFBE6;
-    --text-main: #333333;
-    --text-sub: #888888;
-    --white: #ffffff;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    background-color: var(--white);
-    /* 背景に薄いドット模様を隠し味で追加 */
-    background-image: radial-gradient(#FFEA00 0.5px, transparent 0.5px);
-    background-size: 20px 20px;
-    color: var(--text-main);
-    font-family: 'Noto Sans JP', sans-serif;
-    overflow-x: hidden;
-}
-
-/* ヘッダー */
-header {
-    padding: 20px;
-    text-align: center;
-}
-
-.logo {
-    font-family: 'Fredoka One', cursive; /* 少し丸みのあるポップなフォント */
-    font-size: 2rem;
-    color: var(--text-main);
-    letter-spacing: 1px;
-}
-
-.logo span {
-    color: var(--primary-yellow);
-}
-
-/* ヒーローエリア */
+/* --- ヒーローエリアのアレンジ --- */
 .hero {
-    padding: 100px 20px;
+    padding: 120px 20px;
     text-align: center;
     background-color: var(--soft-yellow);
-    border-radius: 0 0 50px 50px; /* 下側を丸くして柔らかさを */
-    margin-bottom: 50px;
+    border-radius: 0 0 80px 80px; 
+    margin-bottom: 60px;
+    position: relative;
+    overflow: hidden;
 }
 
-.sub-title {
-    display: block;
+.hero-tag {
+    display: inline-block;
+    background: var(--white);
+    padding: 5px 15px;
+    border-radius: 20px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    color: var(--primary-yellow);
+    font-size: 0.8rem;
+    color: var(--text-main);
     letter-spacing: 2px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
 .hero h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 3.5rem;
+    font-size: 4rem; /* 少し大きく */
     margin: 0;
     line-height: 1.1;
+    color: var(--text-main);
 }
 
-.hero h1 span {
-    background: linear-gradient(transparent 70%, var(--primary-yellow) 70%);
-}
-
-.hero p {
-    margin-top: 20px;
-    font-weight: 500;
-    color: var(--text-sub);
-}
-
-/* セクションタイトル */
-.section-title {
-    margin-bottom: 40px;
-}
-
-.section-title .en {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+.highlight {
     color: var(--primary-yellow);
-    margin-bottom: 5px;
-}
-
-.section-title h2 {
-    margin: 0;
-    font-size: 1.8rem;
-}
-
-/* カードエリア */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    max-width: 1000px;
-    margin: 0 auto 80px;
-    padding: 0 20px;
-}
-
-.card {
-    background: var(--white);
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(255, 234, 0, 0.2); /* 黄色の柔らかい影 */
-    transition: transform 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-}
-
-.card .icon {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-.card h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-}
-
-/* 応募エリア */
-.apply-box {
-    max-width: 800px;
-    margin: 0 auto 100px;
-    padding: 60px 20px;
-    background: var(--soft-yellow);
-    border-radius: 30px;
-    text-align: center;
-}
-
-.entry-list {
-    list-style: none;
-    padding: 0;
-    display: inline-block;
-    text-align: left;
-    margin-bottom: 40px;
-}
-
-.entry-list li {
-    margin: 15px 0;
-    padding-left: 30px;
     position: relative;
+    z-index: 1;
+}
+
+/* 文字の後ろに少し遊び心を */
+.highlight::before {
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    left: -5%;
+    width: 110%;
+    height: 15px;
+    background: rgba(255, 234, 0, 0.4);
+    z-index: -1;
+    transform: rotate(-1deg);
+}
+
+.hero-sub {
+    margin-top: 25px;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    color: var(--text-main);
     font-weight: 500;
 }
 
-.entry-list li::before {
-    content: '🍋';
+.hero-decoration {
     position: absolute;
-    left: 0;
+    bottom: 20px;
+    right: 10%;
+    font-size: 3rem;
+    opacity: 0.3;
+    transform: rotate(15deg);
 }
 
-/* ボタン */
-.btn-area {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.btn {
-    padding: 18px 40px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: 700;
-    transition: all 0.3s;
-}
-
-.main-btn {
-    background-color: #06C755; /* LINEカラー */
-    color: white;
-}
-
-.sub-btn {
-    background-color: var(--text-main);
-    color: white;
-}
-
-.btn:hover {
-    opacity: 0.8;
-    transform: scale(1.05);
-}
-
-.note {
-    margin-top: 20px;
-    font-size: 0.8rem;
-    color: var(--text-sub);
-}
-
-/* フッター */
-footer {
-    padding: 40px;
+/* --- CONCEPTセクションの中央揃え --- */
+.centered {
     text-align: center;
-    font-size: 0.9rem;
-    color: var(--text-sub);
 }
 
-/* レスポンシブ */
+.section-title.centered h2::after {
+    left: 50%;
+    transform: translateX(-50%); /* 下線も中央に */
+}
+
+.desc-text.centered {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* スマホ対応の調整 */
 @media (max-width: 600px) {
-    .hero h1 { font-size: 2.2rem; }
-    .grid { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 2.8rem; }
+    .hero { padding: 80px 20px; }
+    .hero-decoration { display: none; }
 }

@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop | Lemon drop</title>
+    <title>Lemon drop | Portfolio & Shop</title>
     <link rel="stylesheet" href="shop-style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+JP:wght@300;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <header class="site-header">
-    <div class="container">
+    <div class="container header-inner">
         <h1 class="logo">Lemon drop</h1>
         <nav class="nav">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#" class="active">Shop</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Works</a></li>
+                <li><a href="#shop">Shop</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
@@ -23,65 +24,78 @@
 </header>
 
 <main>
-    <section class="shop-hero">
-        <div class="container">
-            <h2>Online Shop</h2>
-            <p>毎日に、爽やかなレモンの彩りを。</p>
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Creative & Refreshing.</h2>
+            <p>心を動かすレモンのエッセンスを、あなたの日常に。</p>
         </div>
     </section>
 
-    <section class="product-grid container">
-        <article class="product-card">
-            <div class="product-image">
-                <img src="https://via.placeholder.com/400x400?text=Product+Image" alt="商品名">
-                <span class="badge">New</span>
+    <section id="about" class="container section">
+        <div class="about-grid">
+            <div class="about-text">
+                <span class="sub-title">CONCEPT</span>
+                <h3>「日常にひとさじの酸味と、たっぷりの光を」</h3>
+                <p>Lemon dropは、クリエイティブな活動を通じて、日々の生活が少しだけ明るくなるような瞬間を提案しています。デザイン、写真、そしてプロダクト制作。表現の形は様々ですが、根底にあるのは「爽やかさ」と「遊び心」です。</p>
             </div>
-            <div class="product-info">
-                <h3>レモンドロップ・オリジナル</h3>
-                <p class="price">¥1,200 <span>(tax in)</span></p>
-                <button class="add-to-cart">詳細を見る</button>
+            <div class="about-image">
+                 <img src="https://via.placeholder.com/600x400?text=Brand+Image" alt="ブランドイメージ">
             </div>
-        </article>
+        </div>
+    </section>
 
-        <article class="product-card">
-            <div class="product-image">
-                <img src="https://via.placeholder.com/400x400?text=Product+Image" alt="商品名">
+    <section id="shop" class="shop-section section">
+        <div class="container">
+            <div class="section-header">
+                <span class="sub-title">ONLINE SHOP</span>
+                <h3>Items</h3>
             </div>
-            <div class="product-info">
-                <h3>季節のセレクトセット</h3>
-                <p class="price">¥3,500 <span>(tax in)</span></p>
-                <button class="add-to-cart">詳細を見る</button>
-            </div>
-        </article>
 
-        <article class="product-card">
-            <div class="product-image">
-                <img src="https://via.placeholder.com/400x400?text=Product+Image" alt="商品名">
-                <span class="badge sale">Sale</span>
-            </div>
-            <div class="product-info">
-                <h3>レモンピール・アロマ</h3>
-                <p class="price">¥850 <span>(tax in)</span></p>
-                <button class="add-to-cart">詳細を見る</button>
-            </div>
-        </article>
+            <div class="product-grid">
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/400x400?text=Product+01" alt="商品名">
+                    </div>
+                    <div class="product-info">
+                        <h3>Original Lemon Print</h3>
+                        <p class="price">¥1,200</p>
+                        <a href="#" class="btn-detail">View More</a>
+                    </div>
+                </article>
 
-        <article class="product-card">
-            <div class="product-image">
-                <img src="https://via.placeholder.com/400x400?text=Product+Image" alt="商品名">
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/400x400?text=Product+02" alt="商品名">
+                    </div>
+                    <div class="product-info">
+                        <h3>Handmade Accessory</h3>
+                        <p class="price">¥3,500</p>
+                        <a href="#" class="btn-detail">View More</a>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/400x400?text=Product+03" alt="商品名">
+                    </div>
+                    <div class="product-info">
+                        <h3>Lemon Aroma Wax</h3>
+                        <p class="price">¥2,400</p>
+                        <a href="#" class="btn-detail">View More</a>
+                    </div>
+                </article>
             </div>
-            <div class="product-info">
-                <h3>ギフトラッピング</h3>
-                <p class="price">¥300 <span>(tax in)</span></p>
-                <button class="add-to-cart">詳細を見る</button>
+            
+            <div class="view-all">
+                <a href="#" class="btn-outline">全てのアイテムを見る</a>
             </div>
-        </article>
+        </div>
     </section>
 </main>
 
 <footer class="site-footer">
     <div class="container">
-        <p>&copy; 2026 Lemon drop All Rights Reserved.</p>
+        <p>&copy; 2026 Lemon drop</p>
     </div>
 </footer>
 
